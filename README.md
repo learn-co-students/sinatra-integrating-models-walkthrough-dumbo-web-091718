@@ -90,7 +90,7 @@ Now, let's take the data from `params[user_text]` (in the `post '/' do` route) a
 ```ruby
 post '/' do
   text_from_user = params[:user_text]
-
+ 
   @analyzed_text = TextAnalyzer.new(text_from_user)
 
   erb :results
